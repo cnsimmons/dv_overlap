@@ -1,6 +1,6 @@
 #parameters for ptoc project
 
-curr_dir = '/user_data/csimmon2/git_repos/ptoc'
+curr_dir = os.path.dirname(os.path.abspath(__file__))
 
 import os
 import shutil
@@ -22,7 +22,6 @@ results_dir = '/user_data/csimmon2/git_repos/ptoc/results'
 fig_dir = '/user_data/csimmon2/git_repos/ptoc/results/figures'
 sub_info = pd.read_csv(f'{curr_dir}/sub_info.csv')
 sub_info_tool = pd.read_csv(f'{curr_dir}/sub_info_tool.csv')
-sub_info_OTC = pd.read_csv(f'{curr_dir}/sub_info_OTC.csv')
 task_info = pd.read_csv(f'/user_data/csimmon2/git_repos/ptoc/task_info.csv')
 roi_dir = f'{curr_dir}/roiParcels'
 
